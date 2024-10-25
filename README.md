@@ -41,7 +41,7 @@ The script facilitates the installation of the following SOC components:
 
 Before running the script, please ensure that your system meets the following requirements:
 
-- Ubuntu OS
+- Ubuntu OS 20.04
 - Minimum 4GB of RAM
 - Minimum 20GB of free disk space
 
@@ -56,7 +56,7 @@ If your system doesn't meet these requirements, the script will issue a warning 
 
 2. Navigate to the repository's directory:
    ```bash
-   cd soc_setup
+   cd auto-installer-soc
 3. Make the setup_script.sh executable:
    ```bash
    chmod +x setup_script.sh
