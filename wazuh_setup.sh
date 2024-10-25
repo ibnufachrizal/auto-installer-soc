@@ -63,7 +63,7 @@ integrate_wazuh() {
   apt-get update
 
   # Install the Wazuh manager package
-  apt-get install wazuh-manager -y
+  apt-get install wazuh-manager=4.5.4-1 -y
 
   # Enable and start the Wazuh manager service
   systemctl daemon-reload
@@ -122,7 +122,7 @@ EOF
 
   # Install the Wazuh Kibana plugin
   cd /usr/share/kibana
-  sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.1.2_7.10.2-1.zip
+  sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.5.4_7.17.13-1.zip
 
   # Restart the Kibana service
   systemctl daemon-reload
